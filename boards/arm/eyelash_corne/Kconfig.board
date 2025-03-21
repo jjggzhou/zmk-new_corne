@@ -3,10 +3,6 @@
 # SPDX-License-Identifier: MIT
 #
 
-config BOARD_EYELASH_CORNE_LEFT
-    bool "eyelash_corne left"
-    depends on SOC_NRF52840_QIAA
-
-config BOARD_EYELASH_CORNE_RIGHT
-    bool "eyelash_corne right"
+config BOARD_EYELASH_CORNE
+    bool "eyelash_corne"
     depends on SOC_NRF52840_QIAA
