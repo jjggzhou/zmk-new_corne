@@ -3,17 +3,14 @@
 # SPDX-License-Identifier: MIT
 #
 
-if BOARD_EYELASH_CORNE_LEFT
+if BOARD_EYELASH_CORNE
 
 config ZMK_KEYBOARD_NAME
     default "Eyelash Corne"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+endif # BOARD_EYELASH_CORNE
 
-endif # BOARD_EYELASH_CORNE_LEFT
-
-if BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT
+if BOARD_EYELASH_CORNE
 
 config BOARD
     default "eyelash_corne"
@@ -33,7 +30,7 @@ config ZMK_SLEEP
     default y
 
 config ZMK_SPLIT
-    default y
+    default n
 
 config BT_CTLR
     default BT
@@ -58,4 +55,4 @@ config LED_PWM
 
 endif # ZMK_BACKLIGHT
 
-endif # BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT
+endif # BOARD_EYELASH_CORNE
